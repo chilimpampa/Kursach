@@ -1,5 +1,6 @@
 #pragma once
 #include "Main_menu.h"
+#include <conio.h>
 
 namespace Kursach {
 
@@ -36,7 +37,6 @@ namespace Kursach {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
-
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
@@ -133,7 +133,7 @@ namespace Kursach {
 			// 
 			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 9));
-			this->button1->Location = System::Drawing::Point(177, 587);
+			this->button1->Location = System::Drawing::Point(193, 589);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(120, 42);
 			this->button1->TabIndex = 6;
@@ -208,7 +208,7 @@ namespace Kursach {
 		}
 #pragma endregion
 		bool password_check(String^ password) {
-			if (password == "262319") {
+			if (password == "0000") {
 				return 1;
 			}
 			else {
