@@ -47,6 +47,7 @@ namespace Kursach {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label8;
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -74,6 +75,7 @@ namespace Kursach {
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -224,12 +226,25 @@ namespace Kursach {
 			this->button2->Text = L"Сбережения";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label8->ForeColor = System::Drawing::SystemColors::ControlLight;
+			this->label8->Location = System::Drawing::Point(885, 324);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(273, 49);
+			this->label8->TabIndex = 12;
+			this->label8->Text = L"Анализ  финансов:";
+			// 
 			// Main_menu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->ClientSize = System::Drawing::Size(1340, 761);
+			this->Controls->Add(this->label8);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->dataGridView1);

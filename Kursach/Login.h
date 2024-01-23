@@ -1,6 +1,5 @@
 #pragma once
 #include "Main_menu.h"
-#include <conio.h>
 
 namespace Kursach {
 
