@@ -121,10 +121,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="inoutmoney.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="Main_menu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="inoutmoney.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -133,6 +137,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="inoutmoney.resx">
+      <DependentUpon>inoutmoney.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>

@@ -24,12 +24,18 @@
     <ClCompile Include="Main_menu.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
+    <ClCompile Include="inoutmoney.cpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Main_menu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="inoutmoney.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

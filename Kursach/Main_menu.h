@@ -1,4 +1,5 @@
 #pragma once
+#include "inoutmoney.h"
 
 namespace Kursach {
 
@@ -137,6 +138,7 @@ namespace Kursach {
 			this->button1->Text = L"Внесение / снятие денег";
 			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Main_menu::button1_Click);
 			// 
 			// label4
 			// 
@@ -259,6 +261,7 @@ namespace Kursach {
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedDialog;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Main_menu";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"ЭлКэш";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -270,5 +273,10 @@ namespace Kursach {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		inoutmoney^ inoutmoney_p = gcnew inoutmoney();
+		inoutmoney_p->Show();
+		inoutmoney_p->Owner = this;
+	}
+};
 }
