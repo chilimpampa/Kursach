@@ -49,6 +49,11 @@ namespace Kursach {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Button^ button3;
+
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -77,6 +82,10 @@ namespace Kursach {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
@@ -133,7 +142,7 @@ namespace Kursach {
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(35, 199);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(295, 40);
+			this->button1->Size = System::Drawing::Size(256, 40);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Внесение / снятие денег";
 			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -211,17 +220,17 @@ namespace Kursach {
 			this->label7->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label7->ForeColor = System::Drawing::SystemColors::ControlLight;
-			this->label7->Location = System::Drawing::Point(577, 324);
+			this->label7->Location = System::Drawing::Point(765, 324);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(98, 49);
+			this->label7->Size = System::Drawing::Size(97, 49);
 			this->label7->TabIndex = 9;
-			this->label7->Text = L"Цели:";
+			this->label7->Text = L"Цель:";
 			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(1020, 616);
+			this->button2->Location = System::Drawing::Point(1069, 616);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(205, 40);
 			this->button2->TabIndex = 11;
@@ -231,14 +240,62 @@ namespace Kursach {
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Underline, System::Drawing::GraphicsUnit::Point,
+			this->label8->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->ForeColor = System::Drawing::SystemColors::ControlLight;
-			this->label8->Location = System::Drawing::Point(885, 324);
+			this->label8->ForeColor = System::Drawing::SystemColors::GradientActiveCaption;
+			this->label8->Location = System::Drawing::Point(696, 373);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(273, 49);
+			this->label8->Size = System::Drawing::Size(234, 49);
 			this->label8->TabIndex = 12;
-			this->label8->Text = L"Анализ  финансов:";
+			this->label8->Text = L"Название  цели";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label9->ForeColor = System::Drawing::Color::Cyan;
+			this->label9->Location = System::Drawing::Point(674, 445);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(92, 49);
+			this->label9->TabIndex = 13;
+			this->label9->Text = L"1500";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label10->ForeColor = System::Drawing::SystemColors::ControlLight;
+			this->label10->Location = System::Drawing::Point(782, 445);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(53, 49);
+			this->label10->TabIndex = 14;
+			this->label10->Text = L"из";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label11->ForeColor = System::Drawing::Color::Cyan;
+			this->label11->Location = System::Drawing::Point(841, 445);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(110, 49);
+			this->label11->TabIndex = 15;
+			this->label11->Text = L"15000";
+			// 
+			// button3
+			// 
+			this->button3->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->Location = System::Drawing::Point(705, 515);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(213, 40);
+			this->button3->TabIndex = 16;
+			this->button3->Text = L"Изменить  цель";
+			this->button3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->button3->UseVisualStyleBackColor = true;
 			// 
 			// Main_menu
 			// 
@@ -246,6 +303,10 @@ namespace Kursach {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->ClientSize = System::Drawing::Size(1340, 761);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label7);
