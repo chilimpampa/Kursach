@@ -1,5 +1,6 @@
 #pragma once
 #include "inoutmoney.h"
+#include "change_target.h"
 
 namespace Kursach {
 
@@ -96,11 +97,11 @@ namespace Kursach {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Sans Serif Collection", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::Window;
-			this->label1->Location = System::Drawing::Point(489, 12);
+			this->label1->Location = System::Drawing::Point(433, 12);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(337, 49);
+			this->label1->Size = System::Drawing::Size(505, 49);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Здравствуйте,  Даниил";
+			this->label1->Text = L"Приветствую  Вас  в  Вашем  ЭлКэш";
 			// 
 			// label2
 			// 
@@ -296,6 +297,7 @@ namespace Kursach {
 			this->button3->Text = L"Изменить  цель";
 			this->button3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Main_menu::button3_Click);
 			// 
 			// Main_menu
 			// 
@@ -339,5 +341,10 @@ namespace Kursach {
 		inoutmoney_p->Show();
 		inoutmoney_p->Owner = this;
 	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	change_target^ change_target_p = gcnew change_target();
+	change_target_p->Show();
+	change_target_p->Owner = this;
+}
 };
 }

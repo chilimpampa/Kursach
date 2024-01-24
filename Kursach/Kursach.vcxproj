@@ -121,11 +121,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="change_target.cpp" />
     <ClCompile Include="inoutmoney.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="Main_menu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="change_target.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="inoutmoney.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -137,6 +141,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="change_target.resx">
+      <DependentUpon>change_target.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inoutmoney.resx">
       <DependentUpon>inoutmoney.h</DependentUpon>
     </EmbeddedResource>

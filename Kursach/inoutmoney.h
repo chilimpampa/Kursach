@@ -134,6 +134,7 @@ namespace Kursach {
 			this->button1->TabIndex = 11;
 			this->button1->Text = L"Готово";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &inoutmoney::button1_Click);
 			// 
 			// inoutmoney
 			// 
@@ -156,5 +157,8 @@ namespace Kursach {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Hide();
+	}
+};
 }
